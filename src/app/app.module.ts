@@ -9,7 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+import { Push } from '@ionic-native/push/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +18,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
   providers: [
     StatusBar,
     SplashScreen,
-    LocalNotifications,
+    Push,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
